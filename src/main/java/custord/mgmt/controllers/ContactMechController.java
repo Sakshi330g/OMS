@@ -44,6 +44,6 @@ public class ContactMechController extends HttpServlet {
         List<ContactMech> contacts = contactDAO.getContactsByCustomer(customerId);
 
         request.setAttribute("contacts", contacts);
-        request.getRequestDispatcher("jsp/contact.jsp").forward(request, response);
+        request.getRequestDispatcher("contact.jsp").forward(request, response);
     }
 }
